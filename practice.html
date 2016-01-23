@@ -2,12 +2,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
 integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <style>
-
-
   h2 {
     font-family: Lobster, Monospace;
   }
-
 
   .thick-green-border {
     border-color: green;
@@ -15,7 +12,6 @@ integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkz
     border-style: solid;
     border-radius: 50%;
   }
-
 
 </style>
 
@@ -52,27 +48,33 @@ integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkz
     <li>thunder</li>
     <li>other cats</li>
   </ol>
+  <div class="row">
+    <div class="col-xs-7">
   <form action="/submit-cat-photo">
     <div class="row">
       <div class="col-xs-6">
-        <label><input class="form-control" type="radio" name="indoor-outdoor"> Indoor</label>
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
       </div>
       <div class="col-xs-6">
-        <label><input class="form-control" type="radio" name="indoor-outdoor"> Outdoor</label>
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-4">
-        <label><input class="form-control" type="checkbox" name="personality"> Loving</label>
+        <label><input type="checkbox" name="personality"> Loving</label>
       </div>
       <div class="col-xs-4">
-        <label><input class="form-control" type="checkbox" name="personality"> Lazy</label>
+        <label><input type="checkbox" name="personality"> Lazy</label>
       </div>
       <div class="col-xs-4">
-        <label><input class="form-control" type="checkbox" name="personality"> Crazy</label>
+        <label><input type="checkbox" name="personality"> Crazy</label>
       </div>
     </div>
-    <input class="form-control" type="text" placeholder="cat photo URL" required>
-    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Submit</button>
+    <input type="text" class="form-control" placeholder="cat photo URL" required>
+    </div>
+      <div class="col-xs-5">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+      </div>
   </form>
+</div>
 </div>
